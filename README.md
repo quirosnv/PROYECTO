@@ -18,7 +18,7 @@ de **PYTHON.**
 
 **PARTE DE HTML**
 > <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
 
 **PARTE CCS**
 
@@ -54,20 +54,16 @@ de **PYTHON.**
         <reparto>Nicholas Hoult</reparto>
     </pelicula>
 
+
+
 > Algunos pocos códigos que se pueden ver al inspeccionar el código de la pagina web.
-
-
-
-
-
-
 
 
 
 
 ## Installation
 
->*  Primero, ha de crearse una base de datos con XML.
+>* Primero, ha de crearse una base de datos con XML.
 
 > * Segundo, crear el HTML con CSS para lograr el estilo de la página Web a la que queremos salir.
 
