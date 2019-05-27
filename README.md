@@ -22,7 +22,7 @@ html y css). Retorna una app.py y  se compila en cmd**.
 
 ## Code Samples
 
-**PARTE PYTHON**
+**PYTHON CODE**
 > #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     app.run(debug = True, port = 8000) #se encarga de ejecutar en el servidor por defecto el 5000
     
 
-**JavaScript**
+**JAVASCRIPT CODE**
 > <script>
            			if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
            				xmlhttp = new XMLHttpRequest();
@@ -59,11 +59,11 @@ if __name__ == '__main__':
            			document.write("</p>");
            		</script>
 
-**PARTE DE HTML**
+**HTML CODE**
 > <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
 
-**PARTE CCS**
+**CCS CODE**
 
 > < .body{
   padding-top: 50px;
@@ -82,7 +82,7 @@ if __name__ == '__main__':
   border-radius: 6px;
 } >
 
-**PARTE XML**
+**XML CODE**
 
 <<?xml version="1.0" encoding="UTF-8"?>
 <cine>
@@ -112,7 +112,7 @@ if __name__ == '__main__':
 
 >* Utilizando el framework **(Frameworks que son herramientas que nos dan un esquema de trabajo y una serie de utilidades y funciones que nos facilita y nos abstrae de la construcción de páginas web dinámicas.(conjunto de herramientas))** flask **(Flask es un “micro” Framework escrito en Python y concebido para facilitar el desarrollo de Aplicaciones Web bajo el patrón MVC.)**, para renderizar las plantillas(templates) html y css. Retorna una app.py y  se compila en cmd.
 
-**Instalar python3**
+**Installation Python3**
 
 >* Procedimiento
  
