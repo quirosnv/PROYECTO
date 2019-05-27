@@ -20,7 +20,7 @@ de **PYTHON.**
 > <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
 
-> **PARTE CCS**
+**PARTE CCS**
 
 > .body{
   padding-top: 50px;
@@ -39,10 +39,8 @@ de **PYTHON.**
   border-radius: 6px;
 }
 
+**PARTE XML **
 
-
- **PARTE XML **
->
 <?xml version="1.0" encoding="UTF-8"?>
 <cine>
     <pelicula categoria="accion">
