@@ -5,7 +5,8 @@ LENGUAJE MARCAS
 ## Introduction
 
 > El siguiente proyecto  esta basado en la aplicación de los conocimientos aprendidos durante el curso 2019 con el profesor Carlos Gonzáles de Lenguaje de Marcas.
-Los diferentes tipos de lenguajes utilizados para llevar a cabo el proyecto son **HTML,CSS,XML,XSL,JAVA** y un poco de** PYTHON.**
+Los diferentes tipos de lenguajes utilizados para llevar a cabo el proyecto son **HTML,CSS,XML,XSL,JAVA** y un poco 
+de ** PYTHON.**
 
 > Durante el desarrollo del proyecto tuvimos muchos contras ya que es dificil  enlazar los diferentes documentos dentro de otros con ext diferentes.
 > Antes de crear la pagina web que nos redirige con un XML a un HTML hemos cread un reproductor de musica ,que nos fué muy difícil de crear por esa razon optamos por esta otra opción.
@@ -40,7 +41,7 @@ Los diferentes tipos de lenguajes utilizados para llevar a cabo el proyecto son 
 
 
 
- ** PARTE XML **
+ **PARTE XML **
 
 <?xml version="1.0" encoding="UTF-8"?>
 <cine>
