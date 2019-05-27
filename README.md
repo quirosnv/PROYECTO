@@ -54,7 +54,7 @@ de **PYTHON.**
         <reparto>Nicholas Hoult</reparto>
     </pelicula>
 
-Algunos pocos códigos que se pueden ver al inspeccionar el código de la pagina web.
+> Algunos pocos códigos que se pueden ver al inspeccionar el código de la pagina web.
 
 
 
