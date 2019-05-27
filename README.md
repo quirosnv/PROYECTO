@@ -21,7 +21,7 @@ Los diferentes tipos de lenguajes utilizados para llevar a cabo el proyecto son 
 
 **PARTE CCS**
 
-.body{
+> .body{
   padding-top: 50px;
   padding-bottom: 60px;
   background: ;
