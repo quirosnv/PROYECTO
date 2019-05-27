@@ -22,7 +22,7 @@ de **PYTHON.**
 
 **PARTE CCS**
 
-> .body{
+> < .body{
   padding-top: 50px;
   padding-bottom: 60px;
   background: ;
@@ -37,11 +37,11 @@ de **PYTHON.**
   padding-bottom: 10px;
   margin-top: 1em;
   border-radius: 6px;
-}
+} >
 
 **PARTE XML **
 
-<?xml version="1.0" encoding="UTF-8"?>
+<<?xml version="1.0" encoding="UTF-8"?>
 <cine>
     <pelicula categoria="accion">
         <titulo idioma="ingles">Mad Max</titulo>
@@ -52,11 +52,12 @@ de **PYTHON.**
         <reparto>Tom Hardy</reparto>
         <reparto>Charlize Theron</reparto>
         <reparto>Nicholas Hoult</reparto>
-    </pelicula>
+    </pelicula>>
 
 
 
-> Algunos pocos códigos que se pueden ver al inspeccionar el código de la pagina web.
+> 
+Algunos pocos códigos que se pueden ver al inspeccionar el código de la pagina web.
 
 
 
