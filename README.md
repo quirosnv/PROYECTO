@@ -82,7 +82,7 @@ if __name__ == '__main__':
   border-radius: 6px;
 } >
 
-**PARTE XML **
+**PARTE XML**
 
 <<?xml version="1.0" encoding="UTF-8"?>
 <cine>
@@ -111,3 +111,32 @@ if __name__ == '__main__':
 >* Enlazar los diferentes documentos para optener una interfaz gráfica agradable y que la base de datos sea xml desde un principio.
 
 >* Utilizando el framework **(Frameworks que son herramientas que nos dan un esquema de trabajo y una serie de utilidades y funciones que nos facilita y nos abstrae de la construcción de páginas web dinámicas.(conjunto de herramientas))** flask **(Flask es un “micro” Framework escrito en Python y concebido para facilitar el desarrollo de Aplicaciones Web bajo el patrón MVC.)**, para renderizar las plantillas(templates) html y css. Retorna una app.py y  se compila en cmd.
+
+**Instalar python3**
+
+>* Procedimiento
+ 
+1.- Ir a https://www.python.org/downloads/release/python-373/
+2.- Pinchar sobre "Windows x86-64 executable installer"
+3.- Doble click sobre el fichero descargado llamado "python-3.7.3-amd64"
+4.- Instalar sobre el directorio c:\Python\Python37
+
+
+Instalar prerrequisitos
+1.- Instalar Flask con el siguiente comando:
+
+c:\Python\Python37\python.exe -m pip install Flask
+
+
+Ejecutar proyecto
+
+1.- Descargar fichero PyWeb.rar
+2.- Desempaquetar en c:\
+3.- Ejecutar la siguiente orden:
+
+c:\Python\Python37\python.exe c:\PyWeb\app.py
+
+4.- Abrir navegador e ir a http://127.0.0.1:8000
+
+
+
