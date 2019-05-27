@@ -137,6 +137,7 @@ Ejecutar proyecto
 c:\Python\Python37\python.exe c:\PyWeb\app.py
 
 4.- Abrir navegador e ir a http://127.0.0.1:8000
+.
 
 
 
