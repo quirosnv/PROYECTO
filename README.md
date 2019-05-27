@@ -85,18 +85,15 @@ if __name__ == '__main__':
 **XML CODE**
 
 <<?xml version="1.0" encoding="UTF-8"?>
-<cine>
-    <pelicula categoria="accion">
-        <titulo idioma="ingles">Mad Max</titulo>
-        <director>George Miller</director>
-       <duracion>93 minutos</duracion>
-        <clasificacion>R</clasificacion>
-        <estreno>15 mayo 2015</estreno>
-        <reparto>Tom Hardy</reparto>
-        <reparto>Charlize Theron</reparto>
-        <reparto>Nicholas Hoult</reparto>
-    </pelicula>>
-
+<CINE>
+  <MOVIE name="Mad">
+      <TITLE name= "TITLE">Mad Max</TITLE>
+      <DIRECTOR>Gorge Miller</DIRECTOR>
+      <TIME>93 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR name = "YEAR">15 mayo 2015</YEAR>
+      <ARTIST name= "ARTIST">Tom Hardy</ARTIST>
+  </MOVIE>>
 
 
 > Algunos pocos códigos que se pueden ver al inspeccionar el código de la pagina web.
