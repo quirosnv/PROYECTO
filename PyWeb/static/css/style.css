@@ -1,0 +1,87 @@
+body{
+  font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: rgba(255,15,0,1)
+}
+p{
+  text-align: left;
+}
+.body{
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background: ;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+h1 {
+  text-align: center; /*centrar texto*/
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.main-containe{
+  min-height: 100vh;
+}
+
+.product h2, h3, h4, h5, h6{
+  font-size: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.alita {
+image-orientation: center;
+}
+
+ img{
+  width: 150px;  //tamaño de las imagenes
+}
+
+.card {
+  border-radius: 4px;
+  background-color:rgba(64, 173, 180, 0.38);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.delay-1{
+  animation-delay: 0.1s;
+  position: relative;
+  z-index: 5;
+}
+.delay-2{
+  animation-delay: 0.2s;
+  position: relative;
+  z-index: 4;
+}
+.delay-3{
+  animation-delay: 0.3s;
+  position: relative;
+  z-index: 3;
+}
+.delay-4{
+  animation-delay: 0.4s;
+  position: relative;
+  z-index: 2;
+}
+.delay-5{
+  animation-delay: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}

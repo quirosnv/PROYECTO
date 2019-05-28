@@ -1,0 +1,1361 @@
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" dir="ltr">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Handlee|Permanent+Marker" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Movies list</title>
+  </head>
+  <body>
+
+    <h1>Movies list</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        ANIMACIÓN
+      </button>
+      <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://www.sonypictures.com/movies/theemojimovie" target="_blank">Emoji</a>
+        <a class="dropdown-item" href="https://howtotrainyourdragon.fandom.com/es/wiki/C%C3%B3mo_Entrenar_a_tu_Drag%C3%B3n" target="_blank">How to train your Dragon</a>
+        <a class="dropdown-item" href="https://disney.fandom.com/wiki/Incredibles_2" target="_blank">Incredibles 2 </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://www.filmaffinity.com/es/film135623.html" target="_blank">Inside Out</a>
+        <a class="dropdown-item" href="https://www.imdb.com/title/tt3874544/" target="_blank">The Boss Baby</a>
+
+      </div>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ACCIÓN
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film802281.html" target="_blank">Atomic Blonde</a>
+    <a class="dropdown-item" href="https://marvelcinematicuniverse.fandom.com/es/wiki/Avengers:_Infinity_War" target="_blank">Avengers IW</a>
+    <a class="dropdown-item" href="https://marvelcinematicuniverse.fandom.com/es/wiki/Black_Panther_(pel%C3%ADcula)" target="_blank">Black Panther</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="https://es.wikipedia.org/wiki/Mad_Max:_Fury_Road" target="_blank">Mad Max</a>
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film286514.html" target="_blank">Mission: Imposible -Fallout</a>
+    </div>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    CIENCIA FICCIÓN
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="{{ url_for('static', filename='alita.html')}}">Alita Battle Angel</a>
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt2543164/" target="_blank">Arrival</a>
+    <a class="dropdown-item" href="https://inception.fandom.com/es/wiki/Inception_(pel%C3%ADcula)" target="_blank">Inception</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="http://www.sensacine.com/peliculas/pelicula-216485/" target="_blank">Pacific Rim</a>
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film750408.html" target="_blank">Ready Placer One</a>
+    </div>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    COMEDIA
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt0461770/">Enchanted</a>
+    <a class="dropdown-item" href="https://www.warnerbros.com/movies/get-hard/" target="_blank">Get Hard</a>
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt0277371/" target="_blank">Not Another Teen Movie</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt0110475/" target="_blank">The Mask</a>
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film504889.html" target="_blank">The Truman Show</a>
+    </div>
+        <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    SUSPENSO
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt6644200/" target="_blank">A Quiet Place</a>
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt5052448/" target="_blank">Get Out</a>
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film271893.html" target="_blank">Glass</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="http://www.sensacine.com/peliculas/pelicula-250861/" target="_blank">John Wick 3</a>
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film636016.html" target="_blank">The Purge</a>
+    </div>
+    </div>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    TERROR
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="http://www.sensacine.com/peliculas/pelicula-238622/" target="_blank">Halloween</a>
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film118012.html" target="_blank">Hereditary</a>
+    <a class="dropdown-item" href="https://www.filmaffinity.com/es/film512712.html" target="_blank">Prom Night</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt6857112/" target="_blank">Us</a>
+    <a class="dropdown-item" href="https://www.imdb.com/title/tt0780653/" target="_blank">The Wolfman</a>
+    </div>
+    </div>
+
+  <li class="nav-item dropdown">
+         <a class="nav-link "id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false " aria-expanded="false">
+         </a>
+
+         </div>
+       </li>
+     </ul>
+     <FORM method=GET action="http://www.google.es/search">
+   <fieldset>
+       <input type=hidden name=ie value=UTF-8 />
+       <input type=hidden name=oe value=UTF-8 />
+
+       <INPUT TYPE=text id="s" name="q" value="" size="18" />
+
+       <INPUT type=submit  id="x" name=btnG VALUE="Buscar" />
+
+   </fieldset>
+   </FORM>
+   <li class="nav-item">
+          <a class="nav-link" href="https://github.com/quirosnv/PROYECTO/blob/master/README.md" target="blank" >Acerca</a>
+        </li>
+
+  </nav>
+    <div class="row main-container middle-xs center-xs"> <!-- CLASES DEL FLEXBOX GRID-->
+         <div class="col-md-8 col-sm-10 col-xs-11 col-lg-7">  <!-- LE PONE EN MEDIDAS ADAPTABLES A LAS PANTALLAS -->
+           <div class="box">
+             <div class="card animated  slideInDown">
+
+
+         <article class="">
+           <header class="centrar">
+             <!--   <img class="logo2" src="./Flechaspng/diagonal-arrow.png" alt="Logo de Clic Geek Week" >
+            <h1><span class=" icon-stack">  </span>Menú</h1> -->
+           </header>
+
+
+
+
+           <div class="menus body"> <!-- nombre de la clase para el menu -->
+             <div class="row center-xs"> <!--Centramos todo -->
+
+
+           <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+             <div class="card ">
+
+          <a href=" https://www.youtube.com/watch?v=jym-bOKG8NU"> <img class="Alita" src="{{ url_for('static', filename='img/alita.jpg')}}" title="Clic para más."alt="Alita">
+           <h2>Alita</h2> </a>
+           <div class="card-text">
+
+
+          <script>
+    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+    } else {// code for IE6, IE5
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+    xmlhttp.send();
+    xmlDoc = xmlhttp.responseXML;
+
+    document.write("<p");
+    var x = xmlDoc.getElementsByTagName("MAD");
+    for ( i = 0; i < x.length; i++) {
+      document.write("<p></p>" + "TItulo: ");
+      document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+      document.write("<br><p></p>" + "Director: ");
+      document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+      document.write("<br><p></p>" + "Tiempo");
+      document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+      document.write( "<br><p></p>" + "Clasificacion: ");
+      document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+      document.write("<br><p></p>" + "Estreno: ");
+      document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+      document.write("<br><p></p>" + "Protagonista: ");
+      document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+      document.write("<br><p></p>");
+    }
+    document.write("</p");
+  </script>>
+
+           </div>
+           <a href=" https://www.youtube.com/watch?v=jym-bOKG8NU" class="btn btn-primary">Trailer</a>
+          </div>
+          </div>
+
+
+
+          <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+            <div class="card ">
+
+         <a href="https://www.youtube.com/watch?v=tFMo3UJ4B4g"> <img class="Arrival" src="{{ url_for('static', filename='img/arrival.jpg')}}" title="Clic para más."alt="Arrival">
+          <h2>Arrival</h2> </a>
+          <div class="card-text">
+
+            <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("ARRIVA");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "TItulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+          </div>
+
+
+          <a href="https://www.youtube.com/watch?v=tFMo3UJ4B4g" class="btn btn-primary">Trailer</a>
+         </div>
+         </div>
+         <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+           <div class="card ">
+
+         <a href="https://www.youtube.com/watch?v=yIUube1pSC0"> <img class="Atomic" src="{{ url_for('static', filename='img/Atomic_Blonde_poster.jpg')}}" title="Clic para más."alt="Atomic Blond">
+         <h2>Atomic Blonde</h2> </a>
+         <div class="card-text">
+           <script>
+         if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+         xmlhttp = new XMLHttpRequest();
+         } else {// code for IE6, IE5
+         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+         }
+         xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+         xmlhttp.send();
+         xmlDoc = xmlhttp.responseXML;
+
+         document.write("<p");
+         var x = xmlDoc.getElementsByTagName("ATOMIC");
+         for ( i = 0; i < x.length; i++) {
+         document.write("<p></p>" + "Titulo: ");
+         document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Director: ");
+         document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Tiempo");
+         document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+         document.write( "<br><p></p>" + "Clasificacion: ");
+         document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Estreno: ");
+         document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Protagonista: ");
+         document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>");
+         }
+         document.write("</p");
+         </script>>
+
+         </div>
+         <a href="https://www.youtube.com/watch?v=yIUube1pSC0" class="btn btn-primary">Trailer</a>
+         </div>
+         </div>
+
+
+         <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+           <div class="card ">
+
+         <a href="https://www.youtube.com/watch?v=-f5PwE_Q8Fs"> <img class="Avengers" src="{{ url_for('static', filename='img/AvengersIW.jpg')}}" title="Clic para más."alt="Avengers IW">
+         <h2>Avengers IW</h2> </a>
+         <script>
+       if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+       xmlhttp = new XMLHttpRequest();
+       } else {// code for IE6, IE5
+       xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+       }
+       xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+       xmlhttp.send();
+       xmlDoc = xmlhttp.responseXML;
+
+       document.write("<p");
+       var x = xmlDoc.getElementsByTagName("AVE");
+       for ( i = 0; i < x.length; i++) {
+       document.write("<p></p>" + "Titulo: ");
+       document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+       document.write("<br><p></p>" + "Director: ");
+       document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+       document.write("<br><p></p>" + "Tiempo");
+       document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+       document.write( "<br><p></p>" + "Clasificacion: ");
+       document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+       document.write("<br><p></p>" + "Estreno: ");
+       document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+       document.write("<br><p></p>" + "Protagonista: ");
+       document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+       document.write("<br><p></p>");
+       }
+       document.write("</p");
+       </script>>
+         <a href="https://www.youtube.com/watch?v=-f5PwE_Q8Fs" class="btn btn-primary">Trailer</a>
+         </div>
+         </div>
+         <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+           <div class="card ">
+
+        <a href="https://www.youtube.com/watch?v=axVRnds95T4"> <img class="Bebe" src="{{ url_for('static', filename='img/bebe_jefazo.jpg')}}" title="Clic para más."alt="Bebe jefazo">
+         <h2>BEBE JEFAZO</h2> </a>
+         <div class="card-text">
+           <script>
+         if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+         xmlhttp = new XMLHttpRequest();
+         } else {// code for IE6, IE5
+         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+         }
+         xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+         xmlhttp.send();
+         xmlDoc = xmlhttp.responseXML;
+
+         document.write("<p");
+         var x = xmlDoc.getElementsByTagName("BEBE");
+         for ( i = 0; i < x.length; i++) {
+         document.write("<p></p>" + "Titulo: ");
+         document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Director: ");
+         document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Tiempo: ");
+         document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+         document.write( "<br><p></p>" + "Clasificacion: ");
+         document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Estreno: ");
+         document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>" + "Protagonista: ");
+         document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+         document.write("<br><p></p>");
+         }
+         document.write("</p");
+         </script>>
+
+         </div>
+         <a href="https://www.youtube.com/watch?v=axVRnds95T4" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=JK-wAfAvJ0g"> <img class="Black" src="{{ url_for('static', filename='img/black_panther.jpg')}}" title="Clic para más."alt="Black Panther">
+        <h2>Black Panther</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("BLACK");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=JK-wAfAvJ0g" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=oKiYuIsPxYk"> <img class="How" src="{{ url_for('static', filename='img/como_entrenar_dragon.jpg')}}" title="Clic para más."alt="Como Entrenar a mi dragon">
+        <h2>How to train your Dragon</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("DRAGON");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=oKiYuIsPxYk" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=r8pJt4dK_s4"> <img class="Emoji" src="{{ url_for('static', filename='img/emoji.jpg')}}" title="Clic para más."alt="Emojin">
+        <h2>Emoji</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("EMO");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=r8pJt4dK_s4" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=lokg8Xtq0UE"> <img class="En" src="{{ url_for('static', filename='img/enchanted.jpg')}}" title="Clic para más."alt="Como Entrenar a mi dragon">
+        <h2>Enchanted</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("EN");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=lokg8Xtq0UE" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=l5lojEIitNw"> <img class="Ghard" src="{{ url_for('static', filename='img/get_hard.jpg')}}" title="Clic para más."alt="Get Hard">
+        <h2>Get Hard</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("GET");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=l5lojEIitNw" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=DzfpyUB60YY"> <img class="Gout" src="{{ url_for('static', filename='img/Get_out.jpg')}}" title="Clic para más."alt="Get out">
+        <h2>Get Out</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("OUT");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=DzfpyUB60YY" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=95ghQs5AmNk"> <img class="Glass" src="{{ url_for('static', filename='img/glass.jpg')}}" title="Clic para más."alt="glass">
+        <h2>GLASS</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("GLASS");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=95ghQs5AmNk" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=V6wWKNij_1M"> <img class="Hereditary" src="{{ url_for('static', filename='img/hereditary.jpg')}}" title="Clic para más."alt="Hereditary">
+        <h2>Herditary</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("HERE");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=V6wWKNij_1M" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=ek1ePFp-nBI"> <img class="Halloween" src="{{ url_for('static', filename='img/halloween-.jpg')}}" title="Clic para más."alt="Halloweenn">
+        <h2>Halloween</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("HALLO");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=ek1ePFp-nBI" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=YoHD9XEInc0"> <img class="Inception" src="{{ url_for('static', filename='img/inception.jpg')}}" title="Clic para más."alt="Inceptionn">
+        <h2>Inception</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("INCEP");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=YoHD9XEInc0" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=EIhyFbt1X7E"> <img class="Increible" src="{{ url_for('static', filename='img/increible2.jpg')}}" title="Clic para más."alt="Increible 2">
+        <h2>Increible 2</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("INCRE");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=EIhyFbt1X7E" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=yRUAzGQ3nSY"> <img class="Inside" src="{{ url_for('static', filename='img/inside_out.jpg')}}" title="Clic para más."alt="Inside Out">
+        <h2>Inside Out</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("INSIDE");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=yRUAzGQ3nSY" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=M7XM597XO94"> <img class="John" src="{{ url_for('static', filename='img/john_wick.jpg')}}" title="Clic para más."alt="John Wick">
+        <h2>John Wick 3</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("JOHN");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=M7XM597XO94" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=K0LLaybEuzA"> <img class="Purge" src="{{ url_for('static', filename='img/la_purga.jpg')}}" title="Clic para más."alt="La Purga">
+        <h2>The Purge</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("PURGE");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=K0LLaybEuzA" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=hEJnMQG9ev8"> <img class="Mad" src="{{ url_for('static', filename='img/mad_max.jpg')}}" title="Clic para más."alt="Mad Max">
+        <h2>Mad Max</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("MOVIE");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=hEJnMQG9ev8" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=wb49-oV0F78"> <img class="Mision" src="{{ url_for('static', filename='img/mision_imposible.jpg')}}" title="Clic para más."alt="Mision Imposible">
+        <h2>Mision Imposible</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("MISION");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=wb49-oV0F78" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=BGxy6q5NiOI"> <img class="Another" src="{{ url_for('static', filename='img/Not_Another_Teen_Movie.jpg')}}" title="Clic para más."alt="Not Anther Teen Movie">
+        <h2>Not Another Teen Movie</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("NOT");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+
+
+        <a href="https://www.youtube.com/watch?v=BGxy6q5NiOI" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=_EhiLLOhVis"> <img class="Pacific" src="{{ url_for('static', filename='img/pacific_rim.jpg')}}" title="Clic para más."alt="Pacific Rim">
+        <h2>Pacific Rim</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("PACIFIC");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=_EhiLLOhVis" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=oPq9sgKDE8w"> <img class="Prom" src="{{ url_for('static', filename='img/prom_night.jpg')}}" title="Clic para más."alt="Prom Night">
+        <h2>Prom Night</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("PROM");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=oPq9sgKDE8w" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=rjLVCpE3kuw"> <img class="Ready" src="{{ url_for('static', filename='img/Ready-Player-One.jpg')}}" title="Clic para más."alt="Ready Player One">
+        <h2>Ready Player One</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("READY");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=rjLVCpE3kuw" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=axVRnds95T4"> <img class="Mask" src="{{ url_for('static', filename='img/the_mask.jpg')}}" title="Clic para más."alt="The Mask">
+        <h2>The Mask</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("MASK");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=axVRnds95T4" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=loTIzXAS7v4"> <img class="Truman" src="{{ url_for('static', filename='img/the_truman_show.jpg')}}" title="Clic para más."alt="The Truman Show">
+        <h2>The Truman Show</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("TRUMAN");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=loTIzXAS7v4" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=p9wE8dyzEJE"> <img class="Place" src="{{ url_for('static', filename='img/un_lugar_tranquilo.jpg')}}" title="Clic para más."alt="Un Lugar Tranquilo">
+        <h2>A Quiet Place</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("QUIET");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=p9wE8dyzEJE" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=hNCmb-4oXJA"> <img class="US" src="{{ url_for('static', filename='img/us.jpg')}}" title="Clic para más."alt="US">
+        <h2>US</h2> </a>
+        <div class="card-text">
+          <div class="card-text">
+            <script>
+          if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp = new XMLHttpRequest();
+          } else {// code for IE6, IE5
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+          xmlhttp.send();
+          xmlDoc = xmlhttp.responseXML;
+
+          document.write("<p");
+          var x = xmlDoc.getElementsByTagName("US");
+          for ( i = 0; i < x.length; i++) {
+          document.write("<p></p>" + "Titulo: ");
+          document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+          document.write("<br><p></p>" + "Director: ");
+          document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+          document.write("<br><p></p>" + "Tiempo: ");
+          document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+          document.write( "<br><p></p>" + "Clasificacion: ");
+          document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+          document.write("<br><p></p>" + "Estreno: ");
+          document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+          document.write("<br><p></p>" + "Protagonista: ");
+          document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+          document.write("<br><p></p>");
+          }
+          document.write("</p");
+          </script>>
+
+          </div>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=hNCmb-4oXJA" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+        <div class=" col-xs-10 col-sm-6 col-md-4  product animated slideInUp delay-1">
+          <div class="card ">
+        <a href="https://www.youtube.com/watch?v=VDBZBjmfXqo"> <img class="Wolfman" src="{{ url_for('static', filename='img/wolfman.jpg')}}" title="Clic para más."alt="WolfMan">
+        <h2>WolfMan</h2> </a>
+        <div class="card-text">
+          <script>
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "{{ url_for('static', filename='xml/Biblioteca.xml')}}", false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        document.write("<p");
+        var x = xmlDoc.getElementsByTagName("WOLFMAN");
+        for ( i = 0; i < x.length; i++) {
+        document.write("<p></p>" + "Titulo: ");
+        document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Director: ");
+        document.write(x[i].getElementsByTagName("DIRECTOR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Tiempo: ");
+        document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+        document.write( "<br><p></p>" + "Clasificacion: ");
+        document.write(x[i].getElementsByTagName("CLASIFICATION")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Estreno: ");
+        document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>" + "Protagonista: ");
+        document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+        document.write("<br><p></p>");
+        }
+        document.write("</p");
+        </script>>
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=VDBZBjmfXqo" class="btn btn-primary">Trailer</a>
+        </div>
+        </div>
+               </div>
+           </div>
+           </div>
+           <aside>
+
+           </aside>
+         </article>
+       </div>
+       </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+   <script type="text/javascript">
+   $('form[name=form]').submit(function() {
+  busqueda = $('[name=campo]').val();
+  $("div:contains('"+busqueda+"')").css("font-weight", "bold");
+});
+   </script>
+  </body>
+</html>

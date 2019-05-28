@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CINE>
+  <MOVIE name="Mad">
+      <TITLE name= "TITLE">Mad Max</TITLE>
+      <DIRECTOR>Gorge Miller</DIRECTOR>
+      <TIME>93 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR name = "YEAR">15 mayo 2015</YEAR>
+      <ARTIST name= "ARTIST">Tom Hardy</ARTIST>
+  </MOVIE>
+  <MISION id="Mision">
+      <TITLE idioma="ingles">Mission: Impossible Fallout</TITLE>
+      <DIRECTOR>Christopher McQuarrie</DIRECTOR>
+     <TIME>147 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>27 junio 2018</YEAR>
+      <ARTIST>Tom Cruise</ARTIST>
+  </MISION>
+  <BLACK id="Black" categoria="accion">
+      <TITLE idioma="ingles">Black Panther </TITLE>
+      <DIRECTOR>Ryan Coogler</DIRECTOR>
+     <TIME>134 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>16 febrero 2018</YEAR>
+      <ARTIST>Chadwick Boseman</ARTIST>
+  </BLACK>
+    <AVE id="Avengers" categoria="accion">
+      <TITLE idioma="ingles">Avengers: Infinity War</TITLE>
+      <DIRECTOR>Anthony Russo</DIRECTOR>
+     <TIME>150 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>27 abril 2018</YEAR>
+      <ARTIST>Robert Downey Jr.</ARTIST>
+  </AVE>
+  <ATOMIC id="Atomic" categoria="accion">
+      <TITLE dioma="ingles">Atomic Blonde</TITLE>
+      <DIRECTOR>David Leitch</DIRECTOR>
+     <TIME>115 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>04 agosto 2017</YEAR>
+      <ARTIST>James McAvoy</ARTIST>
+  </ATOMIC>
+  <INSIDE id="Inside" categoria="animacion">
+      <TITLE idioma="ingles">Inside Out</TITLE>
+      <DIRECTOR>Pete Docter</DIRECTOR>
+      <TIME>94 minutos</TIME>
+      <CLASIFICATION>PG paternal</CLASIFICATION>
+      <YEAR>17 junio 2015</YEAR>
+      <ARTIST>Amy Poehler</ARTIST>
+  </INSIDE>
+  <EMO id="Emoji" categoria="animacion">
+      <TITLE idioma="ingles">The Emoji Movie</TITLE>
+      <DIRECTOR>Tony Leondis</DIRECTOR>
+      <TIME>90 minutos</TIME>
+      <CLASIFICATION>PG</CLASIFICATION>
+      <YEAR>28 julio 2017</YEAR>
+      <ARTIST>Amy Poehler</ARTIST>
+  </EMO>
+  <INCRE id="Increible" categoria="animacion">
+      <TITLE idioma="ingles">Incredibles 2</TITLE>
+      <DIRECTOR>Brad Bird</DIRECTOR>
+      <TIME>118 minutos</TIME>
+      <CLASIFICATION>PG paternal</CLASIFICATION>
+      <YEAR>15 junio 2018</YEAR>
+      <ARTIST>Craig Nelson</ARTIST>
+  </INCRE>
+  <BEBE id="Bebe" categoria="animacion">
+      <TITLE idioma="ingles">The Boss Baby</TITLE>
+      <DIRECTOR>Tom McGrath</DIRECTOR>
+      <TIME>98 minutos</TIME>
+      <CLASIFICATION>PG paternal</CLASIFICATION>
+      <YEAR>31 marzo 2017</YEAR>
+      <ARTIST>Alec Baldwin</ARTIST>
+  </BEBE>
+  <DRAGON id="Como" categoria="animacion">
+      <TITLE idioma="ingles">How to train your Dragon</TITLE>
+      <DIRECTOR>Chir Sanderd</DIRECTOR>
+      <TIME>98 minutos</TIME>
+      <CLASIFICATION>PG </CLASIFICATION>
+      <YEAR>26 marzo 2010</YEAR>
+      <ARTIST>Jay Baruchel</ARTIST>
+  </DRAGON>
+  <JOHN id="John" categoria="suspenso">
+      <TITLE idioma="ingles">John Wick 3</TITLE>
+      <DIRECTOR>Chad Stahelski</DIRECTOR>
+      <TIME>130 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>17 mayo 2019</YEAR>
+      <ARTIST>Keanu Reeves</ARTIST>
+  </JOHN>
+  <PURGE id="Purge" categoria="suspenso">
+      <TITLE idioma="ingles">The Purge</TITLE>
+      <DIRECTOR>James DeMonaco</DIRECTOR>
+      <TIME>85 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>13 julio 2013</YEAR>
+      <ARTIST>Ethan Hawke</ARTIST>
+  </PURGE>
+  <QUIET id="Place" categoria="suspenso">
+      <TITLE idioma="ingles">A Quiet Place</TITLE>
+      <DIRECTOR>John Krasinski</DIRECTOR>
+      <TIME>90 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>06 abril 2018</YEAR>
+      <ARTIST>Emily Blunt</ARTIST>
+  </QUIET>
+  <GLASS id="Glass" categoria="suspenso">
+      <TITLE idioma="ingles">Glass</TITLE>
+      <DIRECTOR>Night Shyamalan</DIRECTOR>
+      <TIME>129 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>18 enero 2019</YEAR>
+      <ARTIST>Bruce Willis</ARTIST>
+  </GLASS>
+  <OUT id="Gout" categoria="suspenso">
+      <TITLE idioma="ingles">Get Out</TITLE>
+      <DIRECTOR>Jordan Peele</DIRECTOR>
+      <TIME>104 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>24 febrero 2017</YEAR>
+      <ARTIST>Daniel Kaluuya</ARTIST>
+  </OUT>
+  <MAD id="Alita" categoria="ciencia ficcion">
+      <TITLE idioma="ingles">Alita Battle Angel</TITLE>
+      <DIRECTOR>Robert Rodriguez</DIRECTOR>
+      <TIME>122 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>15 febrero 2019</YEAR>
+      <ARTIST> Rosa Salazar</ARTIST>
+  </MAD>
+  <INCEP id="Inception" categoria="ciencia ficcion">
+      <TITLE idioma="ingles">Inception</TITLE>
+      <DIRECTOR>Christopher Nolan</DIRECTOR>
+      <TIME>148 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>06 agosto 2010</YEAR>
+      <ARTIST>Leonardo DiCaprio</ARTIST>
+  </INCEP>
+  <ARRIVA id="Arrival" categoria="ciencia ficcion">
+      <TITLE idioma="ingles">Arrival</TITLE>
+      <DIRECTOR>Denis Villeneuve</DIRECTOR>
+      <TIME>116 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>01 septiembre 2016</YEAR>
+      <ARTIST>Amy Adams</ARTIST>
+  </ARRIVA>
+  <PACIFIC id="Pacific" categoria="ciencia ficcion">
+      <TITLE idioma="ingles">Pacific Rim</TITLE>
+      <DIRECTOR>Steve DeKnight</DIRECTOR>
+      <TIME>110 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>23 marzo 2018</YEAR>
+      <ARTIST>John Boyega</ARTIST>
+  </PACIFIC>
+  <READY id="Ready" categoria="ciencia ficcion">
+      <TITLE idioma="ingles">Ready Player One</TITLE>
+      <DIRECTOR>Steven Spielberg</DIRECTOR>
+      <TIME>140 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>29 marzo 2018</YEAR>
+      <ARTIST>Tye Sheridan</ARTIST>
+  </READY>
+  <US id="Us" categoria="terror">
+      <TITLE idioma="ingles">Us</TITLE>
+      <DIRECTOR>Jordan Peele</DIRECTOR>
+      <TIME>116 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>22 marzo 2019</YEAR>
+      <ARTIST>Lupita Nyongo</ARTIST>
+  </US>
+  <HERE id="Hereditary" categoria="terror">
+      <TITLE idioma="ingles">Hereditary</TITLE>
+      <DIRECTOR>Ari Aster</DIRECTOR>
+      <TIME>127 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>21 enero 2018</YEAR>
+      <ARTIST>Toni Collete</ARTIST>
+  </HERE>
+  <HALLO id="Halloween" categoria="terror">
+      <TITLE idioma="ingles">Halloween</TITLE>
+      <DIRECTOR>David Gordon Green</DIRECTOR>
+      <TIME>105 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>19 octubre 2018</YEAR>
+      <ARTIST>Jamie Lee Curtis</ARTIST>
+  </HALLO>
+  <WOLFMAN id="WolfMan" categoria="terror">
+      <TITLE idioma="ingles">The Wolfman</TITLE>
+      <DIRECTOR>Joe Johnston</DIRECTOR>
+      <TIME>102 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>12 febrero 2010</YEAR>
+      <ARTIST>Benicio del Toro</ARTIST>
+  </WOLFMAN>
+  <PROM id="Prom" categoria="terror">
+      <TITLE idioma="ingles">Prom Night</TITLE>
+      <DIRECTOR>Paul Lynch</DIRECTOR>
+      <TIME>90 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>18 julio 1980</YEAR>
+      <ARTIST>Jamie Lee Curtis</ARTIST>
+  </PROM>
+  <TRUMAN id="Truman" categoria="comedia">
+      <TITLE idioma="ingles">The Truman Show</TITLE>
+      <DIRECTOR>Peter Weir</DIRECTOR>
+     <TIME>103 minutos</TIME>
+      <CLASIFICATION>R</CLASIFICATION>
+      <YEAR>1 junio 1998</YEAR>
+      <ARTIST>Jim Carrey</ARTIST>
+  </TRUMAN>
+  <MASK id="Mask" categoria="comedia">
+      <TITLE idioma="ingles">The Mask</TITLE>
+      <DIRECTOR>Chuck Russell</DIRECTOR>
+     <TIME>101 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>25 noviembre 1994</YEAR>
+      <ARTIST>Jim Carrey</ARTIST>
+  </MASK>
+  <NOT id="Another" categoria="comedia">
+      <TITLE idioma="ingles">Not Another Teen Movie</TITLE>
+      <DIRECTOR>Joel Gallen</DIRECTOR>
+     <TIME>89 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>22 marzo 2002</YEAR>
+      <ARTIST>Chyler Leigh</ARTIST>
+  </NOT>
+  <EN id="Enchanted" categoria="comedia">
+      <TITLE idioma="ingles">Enchanted</TITLE>
+      <DIRECTOR>Kevin Lima</DIRECTOR>
+     <TIME>108 minutos</TIME>
+      <CLASIFICATION>PG</CLASIFICATION>
+      <YEAR>21 noviembre 2007</YEAR>
+      <ARTIST>Amy Adams</ARTIST>
+  </EN>
+  <GET is="Ghard" categoria="comedia">
+      <TITLE idioma="ingles">Get Hard</TITLE>
+      <DIRECTOR>Etan Cohen</DIRECTOR>
+     <TIME>100 minutos</TIME>
+      <CLASIFICATION>PG 13</CLASIFICATION>
+      <YEAR>27 marzo 2015</YEAR>
+      <ARTIST>Will Ferrell</ARTIST>
+  </GET>
+</CINE>

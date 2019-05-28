@@ -1,0 +1,162 @@
+﻿<collection shelf = "New Arrivals">
+<movie title = "KALEO">
+   <type>Way Down We Go</type>
+   <format>MP3</format>
+   <year>A/B</year>
+   <rating>2017</rating>
+   <stars>10</stars>
+   <description>3:33</description>
+</movie>
+<movie title = "LP">
+   <type>Lost On You</type>
+   <format>MP3</format>
+   <year>Lost On You</year>
+   <rating>2016</rating>
+   <stars>8</stars>
+   <description>4:28</description>
+</movie>
+   <movie title = "Status Quo">
+   <type>In The Army Now</type>
+   <format>MP3</format>
+   <year>In The Army Now</year>
+   <rating>1986</rating>
+   <stars>10</stars>
+   <description>4:41</description>
+</movie>
+<movie title = "Coldplay">
+   <type>Yellow</type>
+   <format>MP3</format>
+   <year>Parachutes</year>
+   <rating>2000</rating>
+   <stars>9</stars>
+   <description>4:26</description>
+</movie>
+   <movie title = "Depeche Mode">
+   <type>Emjoy the Silence</type>
+   <format>MP3</format>
+      <year> The Singles</year>
+   <rating>1990</rating>
+   <stars>9</stars>
+   <description>4:16</description>
+</movie>
+<movie title = "The Cure">
+   <type>LoveSong</type>
+   <format>MP3</format>
+   <year>Japanese Whispers</year>
+   <rating>1989</rating>
+   <stars>9</stars>
+   <description>3:40</description>
+</movie>
+<movie title = "The Cure">
+   <type>Friday Im In Love</type>
+   <format>MP3</format>
+   <year>Wish</year>
+   <rating>1992</rating>
+   <stars>9</stars>
+   <description>3:36</description>
+</movie>
+<movie title = "The Beatles">
+   <type>Love Me  Do</type>
+   <format>MP3</format>
+   <year>Please Please Me</year>
+   <rating>1963</rating>
+   <stars>10</stars>
+   <description>2:26</description>
+</movie>
+<movie title = "The Beatles">
+   <type>Let It Be</type>
+   <format>MP3</format>
+   <year>Parachutes</year>
+   <rating>1970</rating>
+   <stars>10</stars>
+   <description>4:03</description>
+</movie>
+<movie title = "Coldplay">
+   <type>Yellow</type>
+   <format>MP3</format>
+   <year>Parachutes</year>
+   <rating>2000</rating>
+   <stars>9</stars>
+   <description>4:26</description>
+</movie>
+<movie title = "Coldplay">
+   <type>Don't Panic</type>
+   <format>MP3</format>
+   <year>Parachutes</year>
+   <rating>2000</rating>
+   <stars>9</stars>
+   <description>2:17</description>
+</movie>
+<movie title = "Coldplay">
+   <type>Shiver</type>
+   <format>MP3</format>
+   <year>Parachutes</year>
+   <rating>2000</rating>
+   <stars>9</stars>
+   <description>4:59</description>
+</movie>
+<movie title = "Coldplay">
+   <type>Parachutes</type>
+   <format>MP3</format>
+   <year>Parachutes</year>
+   <rating>2000</rating>
+   <stars>9</stars>
+   <description>0:46</description>
+</movie>
+<movie title = "Coldplay">
+   <type>Trouples</type>
+   <format>MP3</format>
+   <year>Parachutes</year>
+   <rating>2000</rating>
+   <stars>9</stars>
+   <description>2:17</description>
+</movie>
+<movie title = "The Cure">
+   <type>Open</type>
+   <format>MP3</format>
+   <year>Wish</year>
+   <rating>1992</rating>
+   <stars>9</stars>
+   <description>6:51</description>
+</movie>
+<movie title = "The Cure">
+   <type>Cut</type>
+   <format>MP3</format>
+   <year>Wish</year>
+   <rating>1992</rating>
+   <stars>9</stars>
+   <description>5:55</description>
+</movie>
+<movie title = "The Cure">
+   <type>End</type>
+   <format>MP3</format>
+   <year>Wish</year>
+   <rating>1992</rating>
+   <stars>9</stars>
+   <description>6:46</description>
+</movie>
+<movie title = "Status Quo">
+   <type>Calling</type>
+   <format>MP3</format>
+   <year>In the Army Now</year>
+   <rating>1992</rating>
+   <stars>8</stars>
+   <description>4:03</description>
+</movie>
+<movie title = "Status Quo">
+   <type>Red Sky</type>
+   <format>MP3</format>
+   <year>In the Army Now</year>
+   <rating>1992</rating>
+   <stars>8</stars>
+   <description>4:13</description>
+</movie>
+<movie title = "The Beatles">
+   <type>Love You</type>
+   <format>MP3</format>
+   <year>Please Please me</year>
+   <rating>1970</rating>
+   <stars>10</stars>
+   <description>2:05</description>
+</movie>
+</collection>
