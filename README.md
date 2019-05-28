@@ -23,6 +23,7 @@ html y css). Retorna una app.py y  se compila en cmd**.
 ## Code Samples
 
 **PYTHON CODE**
+
 ![Sin titulo](https://www.python.org/static/img/python-logo@2x.png)
 
 
@@ -40,9 +41,10 @@ def index ():
 if __name__ == '__main__':
     app.run(debug = True, port = 8000) #se encarga de ejecutar en el servidor por defecto el 5000
     
-    ***
+
 
 **JAVASCRIPT CODE**
+
 ![Sin titulo](https://i0.wp.com/www.vidagnu.com/wp-content/uploads/2014/12/javascript.png?fit=800%2C300&ssl=1)
 
 
@@ -68,13 +70,20 @@ if __name__ == '__main__':
            			}
            			document.write("</p>");
            		</script>
-***
+
+
 
 **HTML CODE**
+![Sin titulo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/230px-HTML5_logo_and_wordmark.svg.png)
+
+
 > <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
 
+
 **CCS CODE**
+![Sin titulo](https://hostproton.com/hosting/media/2018/04/Utilidades-CSS-A%C3%B1adir-Modificar-CSS-Animaciones-CSS.jpg)
+
 
 > < .body{
   padding-top: 50px;
@@ -96,6 +105,8 @@ if __name__ == '__main__':
 ***
 
 **XML CODE**
+![Sin titulo](https://d7uddx54veb4a.cloudfront.net/wp-content/uploads/2016/10/logo-xml.png)
+
 
 <<?xml version="1.0" encoding="UTF-8"?>
 <CINE>
