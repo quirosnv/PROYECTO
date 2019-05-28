@@ -23,7 +23,10 @@ html y css). Retorna una app.py y  se compila en cmd**.
 ## Code Samples
 
 **PYTHON CODE**
-> ![Sin titulo](img/Imagen.PNG (.png))
+> ![Imagen 1][1] 
+
+ [1]: img/icons.png
+
 
 
 > #!/usr/bin/env python
