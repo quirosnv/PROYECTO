@@ -43,6 +43,10 @@ if __name__ == '__main__':
     ***
 
 **JAVASCRIPT CODE**
+![Sin titulo](https://i0.wp.com/www.vidagnu.com/wp-content/uploads/2014/12/javascript.png?fit=800%2C300&ssl=1)
+
+
+
 > <script>
            			if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
            				xmlhttp = new XMLHttpRequest();
