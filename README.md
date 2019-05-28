@@ -23,7 +23,7 @@ html y css). Retorna una app.py y  se compila en cmd**.
 ## Code Samples
 
 **PYTHON CODE**
->![1]: img/Imagen.JPEG
+
 
 
 
@@ -39,6 +39,7 @@ def index ():
 if __name__ == '__main__':
     app.run(debug = True, port = 8000) #se encarga de ejecutar en el servidor por defecto el 5000
     
+    ***
 
 **JAVASCRIPT CODE**
 > <script>
@@ -62,6 +63,7 @@ if __name__ == '__main__':
            			}
            			document.write("</p>");
            		</script>
+***
 
 **HTML CODE**
 > <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
@@ -86,6 +88,8 @@ if __name__ == '__main__':
   border-radius: 6px;
 } >
 
+***
+
 **XML CODE**
 
 <<?xml version="1.0" encoding="UTF-8"?>
@@ -98,7 +102,8 @@ if __name__ == '__main__':
       <YEAR name = "YEAR">15 mayo 2015</YEAR>
       <ARTIST name= "ARTIST">Tom Hardy</ARTIST>
   </MOVIE>>
-
+    
+***
 
 > Algunos pocos códigos que se pueden ver al inspeccionar el código de la pagina web.
 
