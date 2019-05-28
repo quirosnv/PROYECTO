@@ -23,9 +23,7 @@ html y css). Retorna una app.py y  se compila en cmd**.
 ## Code Samples
 
 **PYTHON CODE**
-> ![Imagen 1][1] 
-
- [1]: img/icons.png
+>![1]: img/Imagen.JPEG
 
 
 
