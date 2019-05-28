@@ -23,6 +23,9 @@ html y css). Retorna una app.py y  se compila en cmd**.
 ## Code Samples
 
 **PYTHON CODE**
+> ![Sin titulo](img/Imagen.PNG (.png))
+
+
 > #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from flask import Flask
